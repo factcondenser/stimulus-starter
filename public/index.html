@@ -6,7 +6,13 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
-  <div data-controller="slideshow" data-slideshow-index='1'>
+  <!-- content-loader -->
+  <div data-controller="content-loader"
+       data-content-loader-url="/messages.html"
+       data-content-loader-refresh-interval='5000'></div>
+
+  <!-- Slideshow -->
+  <!-- <div data-controller="slideshow" data-slideshow-index='1'>
     <button data-action="slideshow#previous">←</button>
     <button data-action="slideshow#next">→</button>
 
@@ -14,8 +20,10 @@
     <div data-target="slideshow.slide" class="slide">🙈</div>
     <div data-target="slideshow.slide" class="slide">🙉</div>
     <div data-target="slideshow.slide" class="slide">🙊</div>
-  </div>
-  <div data-controller="clipboard">
+  </div> -->
+
+  <!-- Clipboard -->
+  <!-- <div data-controller="clipboard">
     PIN: <input data-target="clipboard.pin" type="text" value="1234" readonly>
     <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
   </div>
@@ -26,6 +34,6 @@
   <div data-controller="clipboard">
     PIN: <textarea data-target="clipboard.pin" readonly>8888</textarea>
     <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
-  </div>
+  </div> -->
 </body>
 </html>
